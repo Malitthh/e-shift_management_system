@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="e_ShiftDbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="e_ShiftDbConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.e_Shift_ManagementSystem.Properties.Settings.GlobalReference.Default.e_ShiftDbConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TransportTbl" msprop:Generator_RowEvHandlerName="TransportTblRowChangeEventHandler" msprop:Generator_RowDeletedName="TransportTblRowDeleted" msprop:Generator_RowDeletingName="TransportTblRowDeleting" msprop:Generator_RowEvArgName="TransportTblRowChangeEvent" msprop:Generator_TablePropName="TransportTbl" msprop:Generator_RowChangedName="TransportTblRowChanged" msprop:Generator_RowChangingName="TransportTblRowChanging" msprop:Generator_TableClassName="TransportTblDataTable" msprop:Generator_RowClassName="TransportTblRow" msprop:Generator_TableVarName="tableTransportTbl" msprop:Generator_UserTableName="TransportTbl">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Transportid" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="Transportid" msprop:Generator_ColumnPropNameInTable="TransportidColumn" msprop:Generator_ColumnVarNameInTable="columnTransportid" msprop:Generator_UserColumnName="Transportid" type="xs:int" />
+              <xs:element name="CustName" msprop:Generator_ColumnPropNameInRow="CustName" msprop:Generator_ColumnPropNameInTable="CustNameColumn" msprop:Generator_ColumnVarNameInTable="columnCustName" msprop:Generator_UserColumnName="CustName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vehicle" msprop:Generator_ColumnPropNameInRow="Vehicle" msprop:Generator_ColumnPropNameInTable="VehicleColumn" msprop:Generator_ColumnVarNameInTable="columnVehicle" msprop:Generator_UserColumnName="Vehicle">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Products" msprop:Generator_ColumnPropNameInRow="Products" msprop:Generator_ColumnPropNameInTable="ProductsColumn" msprop:Generator_ColumnVarNameInTable="columnProducts" msprop:Generator_UserColumnName="Products">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PickupDate" msprop:Generator_ColumnPropNameInRow="PickupDate" msprop:Generator_ColumnPropNameInTable="PickupDateColumn" msprop:Generator_ColumnVarNameInTable="columnPickupDate" msprop:Generator_UserColumnName="PickupDate" type="xs:dateTime" />
+              <xs:element name="DeliveryDate" msprop:Generator_ColumnPropNameInRow="DeliveryDate" msprop:Generator_ColumnPropNameInTable="DeliveryDateColumn" msprop:Generator_ColumnVarNameInTable="columnDeliveryDate" msprop:Generator_UserColumnName="DeliveryDate" type="xs:dateTime" />
+              <xs:element name="PickupLocation" msprop:Generator_ColumnPropNameInRow="PickupLocation" msprop:Generator_ColumnPropNameInTable="PickupLocationColumn" msprop:Generator_ColumnVarNameInTable="columnPickupLocation" msprop:Generator_UserColumnName="PickupLocation">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Destination" msprop:Generator_ColumnPropNameInRow="Destination" msprop:Generator_ColumnPropNameInTable="DestinationColumn" msprop:Generator_ColumnVarNameInTable="columnDestination" msprop:Generator_UserColumnName="Destination">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Weight" msprop:Generator_ColumnPropNameInRow="Weight" msprop:Generator_ColumnPropNameInTable="WeightColumn" msprop:Generator_ColumnVarNameInTable="columnWeight" msprop:Generator_UserColumnName="Weight" type="xs:int" />
+              <xs:element name="Amount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_UserColumnName="Amount" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TransportTbl" />
+      <xs:field xpath="mstns:Transportid" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
